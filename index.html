@@ -1,28 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Three</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS file link -->
     <link rel="stylesheet" href="/styles/style.css">
+    <!-- Font Icon link -->
+    <script src="https://kit.fontawesome.com/fe9ce59a7f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!------------------------
         Start Header Section 
         ---------------------->
-    <header>
+    <header class="container my-5">
+        <!------------------------
+        Start Navbar Section 
+        ---------------------->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid d-flex justify-content-between">
+                <div>
+                    <a class="navbar-brand" href="#"><img class="p-0" src="/images/logo2.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link">Cases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <button class="d-none d-md-block btn btn-color fw-semibold" type="submit">Free Consultation</button>
+                </div>
+            </div>
+        </nav>
+        <!------------------------
+        Start Banner-image Section 
+        ---------------------->
+        <section class="mt-5">
+            <div class="card text-bg-dark text-center ">
+                <img src="/images/banner.png" class="card-img w-100" alt="...">
+                <div class="card-img-overlay p-5 d-flex flex-column align-items-center justify-content-center md:gap-2">
+                    <h1 class="card-title fw-semibold md:display-4 mx-md-5 px-sm-1 px-md-5">We Provide Effective Legal
+                        Solutions</h1>
+                    <p class="card-text mx-md-5 px-md-5 px-1">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search your services"
+                            aria-label="Search">
+                        <button class="btn btn-color fw-semibold" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </header>
 
     <!------------------------
         Start Main Section 
         ---------------------->
-    <main>
+    <main class="container">
+        <!------------------------
+        Start Legal practice Section 
+        ---------------------->
+        <section class="d-flex justify-content-center text-center">
+            <div>
+                <div class="row ">
+                    <div class="card border-0 p-5">
+                        <div class="card-body">
+                            <h5 class="card-title display-6 fw-semibold">The Legal Practice Area</h5>
+                            <p class="card-text px-md-5 mx-md-5 ">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid grid-templete-3 ">
 
+                    <div class="card-group">
+                        <!-- Card 01 -->
+                        <div class="card p-3">
+                            <img src="/images/business.png" class="card-img-top w-25 align-self-center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Business Law</h5>
+                                <p class="card-text px-4">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="/images/Frame.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Card 02 -->
+                        <div class="card p-3">
+                            <img src="/images/criminal.png" class="card-img-top w-25 align-self-center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Criminal Law</h5>
+                                <p class="card-text px-4">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="/images/Frame.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Card 03 -->
+                        <div class="card p-3">
+                            <img src="/images/child.png" class="card-img-top w-25 align-self-center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Child Support</h5>
+                                <p class="card-text px-4">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="/images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <!-- Card 01 -->
+                        <div class="card p-3">
+                            <img src="/images/business.png" class="card-img-top w-25 align-self-center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Business Law</h5>
+                                <p class="card-text px-4">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="/images/Frame.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Card 02 -->
+                        <div class="card p-3">
+                            <img src="/images/criminal.png" class="card-img-top w-25 align-self-center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Criminal Law</h5>
+                                <p class="card-text px-4">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="/images/Frame.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Card 03 -->
+                        <div class="card p-3">
+                            <img src="/images/child.png" class="card-img-top w-25 align-self-center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Child Support</h5>
+                                <p class="card-text px-4">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour.</p>
+                                <img src="/images/Frame.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 
     <!------------------------
@@ -31,8 +185,11 @@
     <footer>
 
     </footer>
-    
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

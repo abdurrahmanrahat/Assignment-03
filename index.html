@@ -56,10 +56,24 @@
                     </div>
                 </div>
                 <div>
-                    <button class="d-none d-md-block btn btn-color fw-semibold" type="submit">Free Consultation</button>
+                    <button class="d-none d-md-block btn btn-color fw-semibold" type="button" class="button" onclick="openPopup()">Free Consultation</button>
                 </div>
             </div>
         </nav>
+
+        <!------------------------
+        Start for modal section
+        ---------------------->
+        <div class="own-container">
+            <!-- <button type="button" class="button" onclick="openPopup()">Submit</button> -->
+            <div class="popup" id="popup">
+                <img src="/images/404-tick.png" alt="">
+                <h2>Thank You</h2>
+                <p>Your details has been succesfully submitted. Thank You!</p>
+                <button type="button" onclick="closePopup()">Okay</button>
+            </div>
+        </div>
+
         <!------------------------
         Start Banner-image Section 
         ---------------------->
@@ -416,7 +430,21 @@
         crossorigin="anonymous"></script>
 
 
-    
+    <!------------------------
+        Start JavaScript Section for modal
+        ---------------------->
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup")
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+
+    </script>
+
 </body>
 
 </html>

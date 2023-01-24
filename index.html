@@ -27,7 +27,7 @@
             <div class="container-fluid d-flex justify-content-between">
                 <div>
                     <a class="navbar-brand" href="#"><img class="p-0" src="/images/logo2.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler ms-5 px-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -55,31 +55,22 @@
                         </ul>
                     </div>
                 </div>
+
                 <div>
-                    <button class="d-none d-md-block btn btn-color fw-semibold" type="button" class="button" onclick="openPopup()">Free Consultation</button>
+                    <button class="d-none d-md-block btn btn-color fw-semibold" type="button" class="button"
+                        onclick="openPopup()">Free Consultation</button>
                 </div>
             </div>
         </nav>
 
-        <!------------------------
-        Start for modal section
-        ---------------------->
-        <div class="own-container">
-            <!-- <button type="button" class="button" onclick="openPopup()">Submit</button> -->
-            <div class="popup" id="popup">
-                <img src="/images/404-tick.png" alt="">
-                <h2>Thank You</h2>
-                <p>Your details has been succesfully submitted. Thank You!</p>
-                <button type="button" onclick="closePopup()">Okay</button>
-            </div>
-        </div>
+
 
         <!------------------------
         Start Banner-image Section 
         ---------------------->
         <section class="mt-5">
             <div class="card text-bg-dark text-center ">
-                <img src="/images/banner.png" class="card-img w-100" alt="...">
+                <img class="w-100" src="/images/banner.png" class="card-img w-100" alt="...">
                 <div class="card-img-overlay p-5 d-flex flex-column align-items-center justify-content-center md:gap-2">
                     <h1 class="card-title fw-semibold md:display-4 mx-md-5 px-sm-1 px-md-5">We Provide Effective Legal
                         Solutions</h1>
@@ -94,6 +85,20 @@
             </div>
         </section>
     </header>
+
+
+    <!------------------------
+        Start for modal section
+        ---------------------->
+    <div class="">
+        <!-- <button type="button" class="button" onclick="openPopup()">Submit</button> -->
+        <div class="popup own-container d-flex flex-column" id="popup">
+            <img src="/images/404-tick.png" alt="">
+            <h2>Thank You</h2>
+            <p>Your details has been succesfully submitted. Thank You!</p>
+            <button type="button" onclick="closePopup()">Okay</button>
+        </div>
+    </div>
 
     <!------------------------
         Start Main Section 
@@ -215,12 +220,12 @@
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner liner-gradient">
 
                         <div class="carousel-item active" data-bs-interval="10000">
                             <img src="/images/new-banner1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-white">
-                                <img class="w-25 p-5 rounded-circle" src="/images/clint2.jpg" alt="">
+                                <img class="w-25 p-5 rounded-circle" src="/images/clint1.jpg" alt="">
                                 <h5 class="fw-semibold">Awlad Hossain</h5>
                                 <p>UIX Designer</p>
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
@@ -229,7 +234,7 @@
                                     up one of the more obscure Latin words, consectetur.</p>
                             </div>
                         </div>
-                        <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-item" data-bs-interval="10000">
                             <img src="/images/new-banner2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-white">
                                 <img class="w-25 p-5 rounded-circle" src="/images/clint2.jpg" alt="">
@@ -241,10 +246,10 @@
                                     up one of the more obscure Latin words, consectetur.</p>
                             </div>
                         </div>
-                        <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-item" data-bs-interval="10000">
                             <img src="/images/new-banner3.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block text-white">
-                                <img class="w-25 p-5 rounded-circle" src="/images/clint2.jpg" alt="">
+                                <img class="w-25 p-5 rounded-circle" src="/images/clint3.jpg" alt="">
                                 <h5 class="fw-semibold">Awlad Hossain</h5>
                                 <p>UIX Designer</p>
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
@@ -374,13 +379,86 @@
 
             </div>
         </section>
+
+        <!------------------------
+        Start Contact Section 
+        ---------------------->
+        <section class="d-flex justify-content-center text-center my-5">
+            <div>
+                <div class="row ">
+                    <div class="card border-0 p-5">
+                        <div class="card-body">
+                            <h5 class="card-title display-6 fw-semibold">Contact With Us</h5>
+                            <p class="card-text px-md-5 mx-md-5 ">There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-md-flex mb-5">
+                    <!-- contact details -->
+                    <div class="d-flex row row-cols-1 row-cols-md-2 ">
+                        <div>
+                            <p class="text-warning fs-1"><i class="fa-solid fa-location-dot"></i></p>
+                            <h6 class="fs-4">Address</h6>
+                            <p>A108 Adam Street, <br>
+                                New York, NY 535022</p>
+                        </div>
+                        <div>
+                            <p class="text-warning fs-1"><i class="fa-solid fa-phone"></i></p>
+                            <h6 class="fs-4">Call Us</h6>
+                            <p>+88 01750 00 00 00 <br>
+                                +88 01750 00 00 00</p>
+                        </div>
+                        <div>
+                            <p class="text-warning fs-1"><i class="fa-regular fa-envelope"></i></p>
+                            <h6 class="fs-4">Email Us</h6>
+                            <p>info@gmail.com <br>
+                                info@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-warning fs-1"><i class="fa-regular fa-clock"></i></p>
+                            <h6 class="fs-4">Working Hours</h6>
+                            <p>Mon-Fri: 9AM to 5PM <br>
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Form -->
+                    <div class="">
+                        <form class="">
+                            <div class="mb-3">
+                                <input type="text" class="form-control p-1" id="exampleInputName"
+                                    aria-describedby="nameHelp" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control p-1" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control p-1" id="exampleInputSubject"
+                                    placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Massage"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!------------------------
         Start Footer Section 
         ---------------------->
-    <footer class="bg-dark p-5">
-        <div class="d-flex  row row-cols-1 row-cols-md-4 text-white mx-5">
+    <footer class="bg-dark p-md-5 pt-sm-5">
+        <div class="d-flex  row row-cols-1 row-cols-md-4 text-white mx-5 py-5">
             <div>
                 <img src="/images/logo.png" alt="">
                 <div class="mt-5">
@@ -389,7 +467,7 @@
                 </div>
             </div>
             <div>
-                <h3>Usefull Link</h3>
+                <h3 class="">Usefull Link</h3>
                 <div class="mt-5">
                     <p>Homes</p>
                     <p>About Us</p>
@@ -416,7 +494,7 @@
                     <form class="d-flex gap-0" role="search">
                         <input class="form-control me-2 p-3" type="search" placeholder="Email Address"
                             aria-label="Search">
-                        <button class="btn btn-primary  px-3" type="submit"><i
+                        <button class="btn btn-primary px-3" type="submit"><i
                                 class="fa-regular fa-paper-plane"></i></button>
                     </form>
                 </div>
@@ -442,7 +520,6 @@
         function closePopup() {
             popup.classList.remove("open-popup")
         }
-
     </script>
 
 </body>
